@@ -10,7 +10,7 @@
 
 </head>
 <body>
-    <div id="hero">
+    <div id="hero" >
         <video src="assets/videos/751 YouTube.mp4" autoplay loop muted></video>
         <header id="main-header">
 			<!-- <a class="logo" href="/"><img src="assets/logo/logo.png" alt=""></a> -->
@@ -19,11 +19,11 @@
 			<nav>
 				<ul>
                     <li>
-                        <a class="nav-btn" href ="#">Home</a>
+                        <a class="nav-btn" href ="#hero">Home</a>
                     </li>
-                    <li><a class="nav-btn" href="#">Features</a></li>
+                    <li><a class="nav-btn" href="#feature">Features</a></li>
 					<li class="has-submenu">
-						<a class="nav-btn " href="#">Models</a>
+						<a class="nav-btn " href="#models">Models</a>
 
 						<ul>
 							<li><a href="#">S-class</a></li>
@@ -34,7 +34,7 @@
 						</ul>
 					</li>
                 </li>
-                <li><a class="nav-btn" href="#">About</a></li>
+                <li><a class="nav-btn" href="#about">About</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -59,7 +59,7 @@
         </div>
         
     </div>
-    <div class="features">
+    <div class="features" id="feature">
         <div class="features-text">
             <div class="features-heading">
                 <h1>Get to know Mercedes EQS</h1>
@@ -73,16 +73,17 @@
             <div class="features-grid">
                 <div class="fea">
                     <h3>Up to</h3>
-                    <h2>857 km</h2>
+                    <div class="number"><h2>857 km</h2></div>
                     <p>as per ARAI full MIDC</p>
                 </div>
                 <div class="fea">
                     <h3>0-60 mph</h3>
-                    <h2>3.4s</h2>
+                    <div class="number"><h2>3.4s</h2></div>
                 </div>
                 <div class="fea">
                     <h3>Max</h3>
-                    <h2>385 kW</h2>
+                    <div class="number"><h2>385 kW</h2></div>
+                    
                     <p>Rated output</p>
                 </div>
 
@@ -118,7 +119,7 @@
 
                         <img src="assets/images/img4.avif" alt="">
                     </div>
-                        <h2>AKEYLESS-GO</h2>
+                        <h2>A KEYLESS-GO</h2>
                         <p class="small">The KEYLESS-GO Convenience Package lets you start and lock your vehicle with the key on you, while HANDS-FREE ACCESS enables contactless, automatic tailgate operation.</p>
 
                 </div>
@@ -127,7 +128,7 @@
                 <div class="card">
                     <div class="card-img">
 
-                        <img src="assets/images/img1.avif" alt="">
+                        <img src="assets/images/img5.avif" alt="">
                     </div>
                         <h2>EASY-PACK tailgate</h2>
                         <p class="small">the EASY-PACK tailgate can be opened and closed electrically, and makes loading and unloading even more convenient. You can open and close it very easily with the press of a button.</p>
@@ -138,7 +139,7 @@
         </ul>
         
     </div>
-    <div class="models">
+    <div class="models" id="models">
         <div class="models-text"></div>
             <div class="models-heading">
                 <h1>Our Models</h1>
@@ -209,7 +210,7 @@
             </ul>
         </div>
     </div>
-    <div class="about">
+    <div class="about" id="about">
         <div class="about-us"><h2>About us</h2></div>
         
         <p>Mercedes-Benz is one of the world’s most successful automotive companies, renowned for its premium and luxury vehicles. With a rich heritage dating back to the invention of the automobile, Mercedes-Benz continues to lead the industry with innovative technology, exceptional performance, and unparalleled craftsmanship. Our commitment to excellence drives us to create vehicles that embody the perfect blend of luxury, safety, and sustainability, making every journey extraordinary</p>
@@ -228,14 +229,14 @@
                 <nav>
                     <ul>
                         <li>
-                            <a class="nav-btn" href ="#">Home</a>
+                            <a class="nav-btn" href ="#home">Home</a>
                         </li>
-                        <li><a class="nav-btn" href="#">Features</a></li>
+                        <li><a class="nav-btn" href="#feature">Features</a></li>
                         <li class="has-submenu">
-                            <a class="nav-btn " href="#">Models</a>
+                            <a class="nav-btn " href="#models">Models</a>
                         </li>
                     </li>
-                    <li><a class="nav-btn" href="#">About</a></li>
+                    <li><a class="nav-btn" href="#about">About</a></li>
                     </ul>
                 </nav>
     
@@ -246,7 +247,7 @@
       
     <script>
         ScrollReveal({ reset: true ,
-            distance:"60px",
+            distance:"70px",
             duration:2000,
             delay:200,
 
@@ -258,12 +259,14 @@
         ScrollReveal().reveal('.hero-para', { delay: 400,origin:"left"});
         ScrollReveal().reveal('.features-heading', { delay: 200,origin:"left"});
         ScrollReveal().reveal('.features-tagline', { delay: 400,origin:"bottom"});
-        ScrollReveal().reveal('.card', { delay: 300,origin:"bottom", interval:150});
+        ScrollReveal().reveal('.card', { delay: 350,origin:"right", interval:150});
         ScrollReveal().reveal('.models-heading', { delay: 200,origin:"top"});
         ScrollReveal().reveal('.models-tagline', { delay: 250,origin:"right"});
         ScrollReveal().reveal('.model-cards', { delay: 300,origin:"left", interval:300});
         ScrollReveal().reveal('.about-us', { delay: 250,origin:"right"});
         ScrollReveal().reveal('.fa-brands', { delay: 300,origin:"left", interval:200});
+        ScrollReveal().reveal('.number', { delay: 500,origin:"bottom",interval:200});
+
 
         
     </script>
